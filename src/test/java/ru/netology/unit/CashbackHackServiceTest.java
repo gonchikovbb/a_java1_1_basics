@@ -17,10 +17,10 @@ public class CashbackHackServiceTest {
     }
 
     @org.testng.annotations.Test
-    public void shouldRemain0() {
+    public void shouldRemainNext1000() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 1000;
-        int expected = 0;
+        int expected = 1000;
         int actual = cashbackHackService.remain(amount);
         assertEquals(actual, expected);
     }
